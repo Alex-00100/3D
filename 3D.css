@@ -1,0 +1,402 @@
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            width: 200px;
+            height: 200px;
+            transform-origin: 50% 50%;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+        .cube{
+            transform-style: preserve-3d;/*开启3D*/
+            animation-name: change;/*用name配合下面的@keyframes*/
+            animation-duration: 5s;/*动画持续时间*/
+            animation-timing-function: ease-in-out;/*动画过度类型：由慢到快*/
+            animation-iteration-count: infinite;/*动画持续不断*/
+            animation-direction: initial;
+            animation-fill-mode: initial;
+            animation-play-state: initial;
+
+        }
+        @keyframes change{
+            0%{
+                transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+            }
+            33%{
+                transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+            }
+            66%{
+                transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+            }
+            100%{
+                transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+            }
+        }
+        .cube>div{
+                height: 308px;
+                width: 308px;
+                text-align: center;
+                line-height: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+        }
+        /*前面*/
+        .one{
+                margin-top: -154px;
+                margin-left: -154px;
+                border: 5px solid #AF2BB5;
+                transform: translateZ(158px);
+        }
+        /*后面*/
+        .two{
+                margin-top: -154px;
+                margin-left: -154px;
+                border: 5px solid #1EA26E;
+                transform: translateZ(-158px);
+        }
+        /*左面*/
+        .three{
+                margin-top: -154px;
+                margin-left: -154px;
+                border: 5px solid #D1CF18;
+                transform: rotateY(90deg) translateZ(158px);
+        }
+        /*右面*/
+        .four{
+                margin-top: -154px;
+                margin-left: -154px;
+                border: 5px solid #197FAA;
+                transform: rotateY(90deg) translateZ(-158px);
+        }
+        /*底面*/
+        .five{
+                margin-top: -154px;
+                margin-left: -154px;
+                border: 5px solid #C91443;
+                transform: rotateX(90deg) translateZ(158px);
+        }
+        /*上面*/
+        .six{
+                margin-top: -154px;
+                margin-left: -154px;
+                border: 5px solid #0FB0AC;
+                transform: rotateX(90deg) translateZ(-158px);
+        }
+        /*正面小方块*/
+        .one div{
+                height: 100px;
+                width: 100px;
+                background: #8A2BE2;
+                border-radius: 10px;
+        }
+        .one1{
+                position: absolute;
+                left: 2px;
+                top: 2px;
+        }
+        .one2{
+                position: absolute;
+                left: 104px;
+                top: 2px;
+        }
+        .one3{
+                position: absolute;
+                left: 206px;
+                top: 2px;
+        }
+        .one4{
+                position: absolute;
+                left: 2px;
+                top: 104px;
+        }
+        .one5{
+                position: absolute;
+                left: 104px;
+                top: 104px;
+        }
+        .one6{
+                position: absolute;
+                left: 206px;
+                top: 104px;
+        }
+        .one7{
+                position: absolute;
+                left: 2px;
+                top: 206px;
+        }
+        .one8{
+                position: absolute;
+                left: 104px;
+                top: 206px;
+        }
+        .one9{
+                position: absolute;
+                left: 206px;
+                top: 206px;
+        }
+        /*后面小方块*/
+        .two div{
+                height: 100px;
+                width: 100px;
+                background: #04EC99;
+                border-radius: 10px;
+        }
+        .two1{
+                position: absolute;
+                left: 2px;
+                top: 2px;
+        }
+        .two2{
+                position: absolute;
+                left: 104px;
+                top: 2px;
+        }
+        .two3{
+                position: absolute;
+                left: 206px;
+                top: 2px;
+        }
+        .two4{
+                position: absolute;
+                left: 2px;
+                top: 104px;
+        }
+        .two5{
+                position: absolute;
+                left: 104px;
+                top: 104px;
+        }
+        .two6{
+                position: absolute;
+                left: 206px;
+                top: 104px;
+        }
+        .two7{
+                position: absolute;
+                left: 2px;
+                top: 206px;
+        }
+        .two8{
+                position: absolute;
+                left: 104px;
+                top: 206px;
+        }
+        .two9{
+                position: absolute;
+                left: 206px;
+                top: 206px;
+        }
+        /*左面的小方块*/
+        .three div{
+                height: 100px;
+                width: 100px;
+                background:#F4F871;
+                border-radius: 10px;
+        }
+        .three1{
+                position: absolute;
+                left: 2px;
+                top: 2px;
+        }
+        .three2{
+                position: absolute;
+                left: 104px;
+                top: 2px;
+        }
+        .three3{
+                position: absolute;
+                left: 206px;
+                top: 2px;
+        }
+        .three4{
+                position: absolute;
+                left: 2px;
+                top: 104px;
+        }
+        .three5{
+                position: absolute;
+                left: 104px;
+                top: 104px;
+        }
+        .three6{
+                position: absolute;
+                left: 206px;
+                top: 104px;
+        }
+        .three7{
+                position: absolute;
+                left: 2px;
+                top: 206px;
+        }
+        .three8{
+                position: absolute;
+                left: 104px;
+                top: 206px;
+        }
+        .three9{
+                position: absolute;
+                left: 206px;
+                top: 206px;
+        }
+        /*右边的小方块*/
+        .four div{
+                height: 100px;
+                width: 100px;
+                background: #7FB6FF;
+                border-radius: 10px;
+        }
+        .four1{
+                position: absolute;
+                left: 2px;
+                top: 2px;
+        }
+        .four2{
+                position: absolute;
+                left: 104px;
+                top: 2px;
+        }
+        .four3{
+                position: absolute;
+                left: 206px;
+                top: 2px;
+        }
+        .four4{
+                position: absolute;
+                left: 2px;
+                top: 104px;
+        }
+        .four5{
+                position: absolute;
+                left: 104px;
+                top: 104px;
+        }
+        .four6{
+                position: absolute;
+                left: 206px;
+                top: 104px;
+        }
+        .four7{
+                position: absolute;
+                left: 2px;
+                top: 206px;
+        }
+        .four8{
+                position: absolute;
+                left: 104px;
+                top: 206px;
+        }
+        .four9{
+                position: absolute;
+                left: 206px;
+                top: 206px;
+        }
+        /*底面的小方块*/
+        .five div{
+                height: 100px;
+                width: 100px;
+                background: #FF7F8F;
+                border-radius: 10px;
+        }
+        .five1{
+                position: absolute;
+                left: 2px;
+                top: 2px;
+        }
+        .five2{
+                position: absolute;
+                left: 104px;
+                top: 2px;
+        }
+        .five3{
+                position: absolute;
+                left: 206px;
+                top: 2px;
+        }
+        .five4{
+                position: absolute;
+                left: 2px;
+                top: 104px;
+        }
+        .five5{
+                position: absolute;
+                left: 104px;
+                top: 104px;
+        }
+        .five6{
+                position: absolute;
+                left: 206px;
+                top: 104px;
+        }
+        .five7{
+                position: absolute;
+                left: 2px;
+                top: 206px;
+        }
+        .five8{
+                position: absolute;
+                left: 104px;
+                top: 206px;
+        }
+        .five9{
+                position: absolute;
+                left: 206px;
+                top: 206px;
+        }
+        /*上面的小方块*/
+        .six div{
+                height: 100px;
+                width: 100px;
+                background: #6FFFFA;
+                border-radius:10px;
+        }
+        .six1{
+                position: absolute;
+                left: 2px;
+                top: 2px;
+        }
+        .six2{
+                position: absolute;
+                left: 104px;
+                top: 2px;
+        }
+        .six3{
+                position: absolute;
+                left: 206px;
+                top: 2px;
+        }
+        .six4{
+                position: absolute;
+                left: 2px;
+                top: 104px;
+        }
+        .six5{
+                position: absolute;
+                left: 104px;
+                top: 104px;
+        }
+        .six6{
+                position: absolute;
+                left: 206px;
+                top: 104px;
+        }
+        .six7{
+                position: absolute;
+                left: 2px;
+                top: 206px;
+        }
+        .six8{
+                position: absolute;
+                left: 104px;
+                top: 206px;
+        }
+        .six9{
+                position: absolute;
+                left: 206px;
+                top: 206px;
+        }
